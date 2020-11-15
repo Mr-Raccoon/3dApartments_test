@@ -1,4 +1,3 @@
-import $ from 'jquery';
 import swal from 'sweetalert';
 window.Vue = require('vue');
 
