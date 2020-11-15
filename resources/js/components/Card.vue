@@ -1,7 +1,7 @@
 <template>
     <div class="col-12 col-sm-6 col-md-3">
         <div class="card">
-            <img class="card-img-top" :src=" 'storage/' + image" alt="Card image cap">
+            <img class="card-img-top" :src="image" alt="Card image cap">
             <div class="card-body d-flex flex-column">
                 <h4>{{ title }}</h4>
                 <p class="card-text">{{ description}}</p>
