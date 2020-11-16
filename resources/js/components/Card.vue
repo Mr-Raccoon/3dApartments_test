@@ -31,29 +31,31 @@ export default {
                     id: this.id
                 }
             }).then(function (response) {
-                    swal({
-                        title: response.data.name,
-                        text: response.data.msg,
-                        icon: response.data.status
-                    });
+                swal({
+                    title: response.data.name,
+                    text: response.data.msg,
+                    icon: response.data.status
+                });
 
-                    vm.$root.$emit('article-created');
-                }).catch(function (error) {
-                    swal({
-                        title: error.name,
-                        text: error.msg,
-                        icon: error.status
-                    });
-                })
+                vm.$root.$emit('article-created');
+            }).catch(function (error) {
+                swal({
+                    title: error.name,
+                    text: error.msg,
+                    icon: error.status
+                });
+            })
         },
         setDefaultImg() {
-            this.image = 'img/default.png';
+            this.image = '/img/default.png';
         }
     },
     mounted() {
         if (this.image === '') {
             this.setDefaultImg();
         }
+
+        console.log(this.image);
     }
 }
 </script>

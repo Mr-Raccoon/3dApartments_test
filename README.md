@@ -1,5 +1,5 @@
 <h1>Read me</h1>
-You should have php version 7.3 or higher also installed Composer and Artisan.
+You should have php version 7.1 or higher also installed Composer and Artisan.
 <br>
 <br>
 For setting up this project run the following commands:
