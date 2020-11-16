@@ -30,18 +30,15 @@ export default {
                 params: {
                     id: this.id
                 }
-            })
-                .then(function (response) {
+            }).then(function (response) {
                     swal({
                         title: response.data.name,
                         text: response.data.msg,
                         icon: response.data.status
                     });
-                })
-                .then(function () {
+
                     vm.$root.$emit('article-created');
-                })
-                .catch(function (error) {
+                }).catch(function (error) {
                     swal({
                         title: error.name,
                         text: error.msg,

@@ -1,7 +1,5 @@
 <template>
     <div class="card-wrapper">
-<!--        <h1 >Loading..</h1>-->
-
         <div v-if="!offers_loaded" class="preloader">
             <div class="preloader__image"></div>
         </div>
@@ -12,7 +10,7 @@
             <card v-for="card in paginatedCards" :title="card.name" :description="card.text" :imageSrc="card.image_src" :id="card.id"></card>
         </div>
 
-        <nav aria-label="Page navigation example" class="d-flex justify-content-between">
+        <nav aria-label="Page navigation" class="d-flex justify-content-between">
             <div class="d-flex flex-column">
                 <span>Total cards: {{ cards.length }}</span>
                 <span>Page {{ pageNumber + 1 }} of {{ pageCount }}</span>

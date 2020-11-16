@@ -61,14 +61,15 @@ export default {
                     vm.article.text = '';
                     vm.article.name = '';
                     vm.article.image_src = '';
+
                     $('#exampleModalLong').modal('hide');
-                }).then(function () {
+
                     swal({
                         title: 'Success!',
-                        text: 'Your article created',
+                        text: 'Your article has been created',
                         icon: 'success'
                     });
-                }).then(function () {
+
                     vm.$root.$emit('article-created');
                 }).catch(function (error) {
                     swal({

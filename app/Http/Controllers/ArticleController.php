@@ -49,7 +49,7 @@ class ArticleController extends Controller
         return response()->json([
             'status' => 'success',
             'name' => 'Deleted',
-            'msg' => 'Your article deleted',
+            'msg' => 'Your article has been deleted',
         ], 201);
     }
 }

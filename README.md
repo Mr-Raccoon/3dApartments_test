@@ -9,7 +9,9 @@ For setting up this project run the following commands:
 - cp .env.example .env
 - php artisan key:generate
 
-Then configure your database in the .env file end then run:
+Create the database and add access data to .env file.
+
+Then run:
 
 - npm run development
 - php artisan serve
