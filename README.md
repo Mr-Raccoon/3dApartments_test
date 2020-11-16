@@ -13,5 +13,6 @@ Create the database and add access data to .env file.
 
 Then run:
 
+- php artisan migrate
 - npm run development
 - php artisan serve
